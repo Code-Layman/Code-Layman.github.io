@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
  
 fx.base = "EUR";
@@ -47,12 +46,9 @@ else if(currency == "gbp") { $(".cc-shop-product-price-current").text(GBP)}
 else if(currency == "chf") { $(".cc-shop-product-price-current").text(CHF)}
         
 $(".j-product__variants__item").each(function(){
-
-
 var title=$(this).attr("title");
 getAmount(title)
 eurTocurrencys(amount)
-
 var content=$(this).attr("content");
 
 if(currency == "usd") { $(this).text(content+"     "+USD)} 
