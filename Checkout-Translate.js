@@ -16,7 +16,7 @@ var translator = $('body').translate({
 });
 		
 $("#TranslateCheckout").change(function(){
-var country=$("#languageSelector").children('option:selected').val()
+var country=$("#TranslateCheckout").children('option:selected').val()
         
 if(country == "en") {translator.lang("en")}
 else if(country == "de") {translator.lang("de")}
