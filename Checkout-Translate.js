@@ -1,6 +1,24 @@
 $(document).ready(function(){
-
+$("#cc-checkout-steps li a span").attr("class","trn");
+	
+	
 var local = {
+    "Warenkorb": {
+      en: "Shipping cart"
+    },
+	
+     "Adresse angeben": {
+      en: "Shipping address"
+    },
+	
+     "Bezahlen": {
+      en: "Payment"
+    },
+	
+     "Bestätigen": {
+      en: "Confirm"
+    },
+	
     "Herr": {
       en: "Mr"
     },
