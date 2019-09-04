@@ -24,6 +24,7 @@ translator.lang("en")
 }
 else if(country == "de") {
 $("#cc-checkout-submit-0").attr("Value","Nächster Schritt");
-translator.lang("de")}
+translator.lang("de")
+}
 });	
 });
