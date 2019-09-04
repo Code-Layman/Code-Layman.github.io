@@ -18,7 +18,12 @@ var translator = $('body').translate({
 $("#TranslateCheckout").change(function(){
 var country=$("#TranslateCheckout").children('option:selected').val()
         
-if(country == "en") {translator.lang("en")}
-else if(country == "de") {translator.lang("de")}
+if(country == "en") {
+$("#cc-checkout-submit-0").attr("Value","Next step");
+translator.lang("en")
+}
+else if(country == "de") {
+$("#cc-checkout-submit-0").attr("Value","Nächster Schritt");
+translator.lang("de")}
 });	
 });
