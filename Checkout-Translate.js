@@ -33,7 +33,7 @@ var translator = $('body').translate({
     t: local
 });
 		
-$("#languageSelector").change(function(){
+$("#TranslateCheckout").change(function(){
 var country=$("#languageSelector").children('option:selected').val()
         
 if(country == "en") {translator.lang("en")}
