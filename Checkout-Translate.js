@@ -1,7 +1,6 @@
 $(document).ready(function(){
 $("span").attr("class","trn");
-	
-	
+		
 var local = {
     "Warenkorb":{en:"Shipping cart"},
     "Adresse angeben":{en:"Shipping address"},
