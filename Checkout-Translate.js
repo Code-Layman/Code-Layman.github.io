@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$("#cc-checkout-steps li a span").attr("class","trn");
+$("span").attr("class","trn");
 	
 	
 var local = {
