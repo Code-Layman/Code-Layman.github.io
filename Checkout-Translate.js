@@ -3,29 +3,12 @@ $("span").attr("class","trn");
 	
 	
 var local = {
-    "Warenkorb": {
-      en: "Shipping cart"
-    },
-	
-     "Adresse angeben": {
-      en: "Shipping address"
-    },
-	
-     "Bezahlen": {
-      en: "Payment"
-    },
-	
-     "Bestätigen": {
-      en: "Confirm"
-    },
-	
-    "Herr": {
-      en: "Mr"
-    },
-	
-	  "Frau": {
-      en: "Mrs"
-    },
+    "Warenkorb":{en:"Shipping cart"},
+    "Adresse angeben":{en:"Shipping address"},
+    "Bezahlen":{en:"Payment"},
+    "Bestätigen":{en:"Confirm"},
+    "Herr":{en:"Mr"},
+    "Frau": {en:"Mrs"},
 };	
 
 var translator = $('body').translate({
