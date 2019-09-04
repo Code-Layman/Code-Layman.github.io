@@ -1,13 +1,13 @@
 $(document).ready(function(){
 $("#cc-checkout-steps li span").attr("class","trn");	
 $("h3").attr("class","trn");
-$("label.j-checkout__product-single-price").attr("class","trn");
-$("label.j-checkout__product-amount").attr("class","trn");
-$("label.j-checkout__product-price").attr("class","trn");
+$("label.j-checkout__product-single-price").attr("class","j-checkout__product-single-price trn");
+$("label.j-checkout__product-amount").attr("class","j-checkout__product-amount trn");
+$("label.j-checkout__product-price").attr("class","j-checkout__product-price trn");
 $("label.j-checkout__products-subtotal-label").attr("class","trn");
 $("label.j-checkout__shipping-costs-label").attr("class","trn");	
 $("label.j-checkout__products-total-label").attr("class","trn");	
-$("label.j-checkout__customer-order-note__label").attr("class","trn");	
+$("label.j-checkout__customer-order-note__label").attr("class","trn");		
 
 function toEnglish(){
 $("#cc-checkout-submit-0").attr("Value","Next step");	
