@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $("#cc-checkout-steps li span").attr("class","trn");	
 $("h3").attr("class","trn");
-$("label").attr("class","trn");	
+
 		
 var local = {
         "Warenkorb":{en:"Shipping cart"},
