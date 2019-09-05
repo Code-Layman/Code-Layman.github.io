@@ -18,8 +18,7 @@ $("#cc-checkout-shipping-address-form h3").attr("class","trn");
 $("option").attr("class","trn");		
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
 	
-$("#cc-checkout-paymentmethod-form span").attr("class","trn");
-$("div.j-checkout-payment__secure-text").attr("class","j-checkout-payment__secure-text trn");
+
 $("span.j-checkout__payment-method-paypal-text").attr("class","j-checkout__payment-method-paypal-text trn");	
 $("span.j-checkout__payment-method-default-text").attr("class","j-checkout__payment-method-default-text trn");	
 	
@@ -34,6 +33,7 @@ $("label[for*='city']").text("City *");
 $("label[for*='telephone']").text("Telephone *");
 $("label[for*='country']").text("Country * ");
 $("#cc-checkout-form p").text("* Required");
+$("div.j-checkout-payment__secure-text").text("The credit card data is encrypted.");	
 }
 	
 function toGerman(){
@@ -46,6 +46,7 @@ $("label[for*='city']").text("Stadt *");
 $("label[for*='telephone']").text("Telefon *");
 $("label[for*='country']").text("Land * ");
 $("#cc-checkout-form p").text("* Pflichtfeld");
+$("div.j-checkout-payment__secure-text").text("Die Kreditkartendaten werden verschlüsselt übertragen.");	
 }			
 		
 var local = {
@@ -76,8 +77,7 @@ var local = {
 	"Frau": {en:"Mrs"},
 	
 	"Zahlungsmethode auswählen.": {en:"Select a payment method."},
-	"Kreditkarte": {en:"Credit card"},
-	"Die Kreditkartendaten werden verschlüsselt übertragen.": {en:"The credit card data is encrypted."},
+	" Die Kreditkartendaten werden verschlüsselt übertragen.": {en:"The credit card data is encrypted."},
 	"PayPal (Kreditkarte, Lastschrift, Überweisung)": {en:"PayPal (credit card, direct debit, bank transfer)"},
 	"Gegen Vorkasse": {en:"Bank transfer"},
 	
