@@ -1,4 +1,7 @@
 $(document).ready(function(){
+var webpage=window.location.href
+var reg = RegExp(/checkout/)
+if(webpage.match(reg)){ 	
 $("#cc-checkout-steps li span").attr("class","trn");	
 $("h3").attr("class","trn");
 $("label.j-checkout__product-single-price").attr("class","j-checkout__product-single-price trn");
@@ -49,5 +52,6 @@ else if(country == "de") {
 translator.lang("de")
 toGerman()	
 }
-});	
+});
+}	
 });
