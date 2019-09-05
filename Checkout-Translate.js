@@ -13,7 +13,8 @@ $("label.j-checkout__products-total-label").attr("class","trn");
 $("label.j-checkout__customer-order-note__label").attr("class","trn");	
 	
 $("#cc-checkout-address-head-same").attr("class","trn");
-$("#cc-checkout-address-head-differs").attr("class","trn");	
+$("#cc-checkout-address-head-differs").attr("class","trn");
+$("#cc-checkout-shipping-address-form h3").attr("class","trn");
 $("option").attr("class","trn");		
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
 
@@ -53,9 +54,11 @@ var local = {
 	"Versandkosten*<small></small>:":{en:"Shipping costs*:"},
 	" Gesamtsumme<small></small>:":{en:" Total:"},
 	"Anmerkung zur Bestellung":{en:"Customer order note"},
+	"Anmerkung":{en:"Customer order note"},
 	
 	"Rechnungs- und Lieferadresse":{en:"Billing and shipping address"},
 	"Rechnungsadresse":{en:"Billing address"},
+	"Lieferadresse":{en:"Shipping address"},
 	"Anrede":{en:"Title"},
 	"Firma":{en:"Company"},
 	"Adresszusatz":{en:"Address addition"},	
