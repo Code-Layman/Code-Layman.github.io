@@ -14,19 +14,32 @@ $("label.j-checkout__customer-order-note__label").attr("class","trn");
 	
 $("#cc-checkout-address-head-same").attr("class","trn");
 $("#cc-checkout-address-head-differs").attr("class","trn");	
-$("#option").attr("class","trn");	
-$(".j-checkout__input-label j-checkout__addressform-mandatory").attr("class","j-checkout__input-label j-checkout__addressform-mandatory trn");		
+$("option").attr("class","trn");		
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
-$(".cc-checkout-adressform-mandatory j-checkout__input-label optional").attr("class","cc-checkout-adressform-mandatory j-checkout__input-label optional trn");		
-$("#cc-checkout-form p").attr("class","trn");	
 
 function toEnglish(){
-$("#cc-checkout-submit-0").attr("Value","Next step");	
+$("input[id*='cc-checkout-submit']").attr("Value","Next step");
+$("label[for*='firstname']").text("First Name *");
+$("label[for*='lastname']").text("Last Name *");
+$("label[for*='street']").text("Street, No. *");
+$("label[for*='zip']").text("Post code *");
+$("label[for*='city']").text("City *");
+$("label[for*='telephone']").text("Telephone *");
+$("label[for*='country']").text("Country * ");
+$("#cc-checkout-form p").text("* Required");
 }
 	
 function toGerman(){
-$("#cc-checkout-submit-0").attr("Value","Nächster Schritt");		
-}		
+$("input[id*='cc-checkout-submit']").attr("Value","Nächster Schritt");
+$("label[for*='firstname']").text("Vorname *");
+$("label[for*='lastname']").text("Nachname *");
+$("label[for*='street']").text("Straße, Nr. *");
+$("label[for*='zip']").text("Postleitzahl *");
+$("label[for*='city']").text("Stadt *");
+$("label[for*='telephone']").text("Telefon *");
+$("label[for*='country']").text("Land * ");
+$("#cc-checkout-form p").text("* Pflichtfeld");
+}			
 		
 var local = {
         "Warenkorb":{en:"Shipping cart"},
@@ -44,20 +57,11 @@ var local = {
 	"Rechnungs- und Lieferadresse":{en:"Billing and shipping address"},
 	"Rechnungsadresse":{en:"Billing address"},
 	"Anrede":{en:"Title"},
-	'Vorname <em class="j-checkout__required">*</em>':{en:"First name *"},
-	'Nachname <em class="j-checkout__required">*</em>':{en:"Last name *"},
 	"Firma":{en:"Company"},
-	'Straße, Nr. <em class="j-checkout__required">*</em>':{en:"Street, No. *"},
 	"Adresszusatz":{en:"Address addition"},	
-	'Postleitzahl <em class="j-checkout__required">*</em>':{en:"Zip Code"},	
-	'Stadt <em class="j-checkout__required">*</em>':{en:"City *"},	
 	"Bundesland/Kanton":{en:"State"},	
-	'Telefon <em class="j-checkout__required">*</em>':{en:"Telephone *"},		
-	'E-Mail <em class="j-checkout__required">*</em>':{en:"E-Mail *"},	
 	"USt-IdNr.":{en:"VAT No."},	
 	"Bundesland/Kanton":{en:"State"},
-	'Land <em class="j-checkout__required">*</em>':{en:"Country *"},	
-	' <em class="j-checkout__required">*</em> Pflichtfeld':{en:"* Required"},
 	
 	"Herr":{en:"Mr"},
 	"Frau": {en:"Mrs"},
