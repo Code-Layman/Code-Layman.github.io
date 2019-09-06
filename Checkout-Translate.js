@@ -88,7 +88,7 @@ var local = {
 	
 	"Rechnungs- und Lieferadresse":{en:"Billing and shipping address"},
 	"Rechnungsadresse":{en:"Billing address"},
-	"Lieferadresse":{en:"Shipping address"},
+	"         Lieferadresse    ":{en:"Shipping address"},
 	"Anrede":{en:"Title"},
 	"Firma":{en:"Company"},
 	"Adresszusatz":{en:"Address addition"},	
