@@ -39,7 +39,8 @@ $("label[for*='city']").text("City *");
 $("label[for*='telephone']").text("Telephone *");
 $("label[for*='country']").text("Country * ");
 $("#cc-checkout-form p").text("* Required");
-	
+
+$("div._stripecreditcard label span:eq(1)").text("Credit card");	
 $("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");
 if($("div.j-checkout__overview-adress h3").text().indexOf("und")>= 0){
 $("div.j-checkout__overview-adress h3").html("Billing and shipping address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
@@ -68,6 +69,8 @@ $("label[for*='telephone']").text("Telefon *");
 $("label[for*='country']").text("Land * ");
 $("#cc-checkout-form p").text("* Pflichtfeld");
 	
+	
+$("div._stripecreditcard label span:eq(1)").text("Kreditkarte");	
 $("div.j-checkout-payment__secure-text").text("Die Kreditkartendaten werden verschlüsselt übertragen.");
 if($("div.j-checkout__overview-adress h3").text().indexOf("and")>= 0){
 $("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>");	
