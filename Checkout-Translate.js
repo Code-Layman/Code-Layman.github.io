@@ -14,7 +14,6 @@ $("label.j-checkout__customer-order-note__label").attr("class","trn");
 	
 $("#cc-checkout-address-head-same").attr("class","trn");
 $("#cc-checkout-address-head-differs").attr("class","trn");
-$("#cc-checkout-shipping-address-form h3").attr("class","trn");
 $("option").attr("class","trn");		
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
 	
@@ -30,6 +29,9 @@ $("input[id*='cc-checkout-submit']").attr("Value","Next step");
 if($(".j-checkout__button--step-forward").val().indexOf("Kauf")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Confirm");
 }	
+
+$("#cc-checkout-shipping-address-form h3']").text("Shipping address");
+$(".j-checkout__shipping-address-checkbox__title']").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs' Other shipping address>");	
 $("label[for*='firstname']").text("First Name *");
 $("label[for*='lastname']").text("Last Name *");
 $("label[for*='street']").text("Street, No. *");
@@ -38,6 +40,7 @@ $("label[for*='city']").text("City *");
 $("label[for*='telephone']").text("Telephone *");
 $("label[for*='country']").text("Country * ");
 $("#cc-checkout-form p").text("* Required");
+	
 $("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");
 if($("div.j-checkout__overview-adress h3").text().indexOf("und")>= 0){
 $("div.j-checkout__overview-adress h3").html("Billing and shipping address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
@@ -54,6 +57,9 @@ $("input[id*='cc-checkout-submit']").attr("Value","Nächster Schritt");
 if($(".j-checkout__button--step-forward").val().indexOf("firm")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Kaufen");
 }
+
+$("#cc-checkout-shipping-address-form h3']").text("Lieferadresse");
+$(".j-checkout__shipping-address-checkbox__title']").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs' Andere Lieferadresse>");
 $("label[for*='firstname']").text("Vorname *");
 $("label[for*='lastname']").text("Nachname *");
 $("label[for*='street']").text("Straße, Nr. *");
@@ -62,6 +68,7 @@ $("label[for*='city']").text("Stadt *");
 $("label[for*='telephone']").text("Telefon *");
 $("label[for*='country']").text("Land * ");
 $("#cc-checkout-form p").text("* Pflichtfeld");
+	
 $("div.j-checkout-payment__secure-text").text("Die Kreditkartendaten werden verschlüsselt übertragen.");
 if($("div.j-checkout__overview-adress h3").text().indexOf("and")>= 0){
 $("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>");	
@@ -88,7 +95,6 @@ var local = {
 	
 	"Rechnungs- und Lieferadresse":{en:"Billing and shipping address"},
 	"Rechnungsadresse":{en:"Billing address"},
-	"         Lieferadresse    ":{en:"Shipping address"},
 	"Anrede":{en:"Title"},
 	"Firma":{en:"Company"},
 	"Adresszusatz":{en:"Address addition"},	
