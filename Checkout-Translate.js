@@ -29,9 +29,8 @@ $("input[id*='cc-checkout-submit']").attr("Value","Next step");
 if($(".j-checkout__button--step-forward").val().indexOf("Kauf")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Confirm");
 }	
-
 $("#cc-checkout-shipping-address-form h3']").text("Shipping address");
-$(".j-checkout__shipping-address-checkbox__title']").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs' Other shipping address>");	
+$(".j-checkout__shipping-address-checkbox__title").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs'> Other shipping address");	
 $("label[for*='firstname']").text("First Name *");
 $("label[for*='lastname']").text("Last Name *");
 $("label[for*='street']").text("Street, No. *");
@@ -59,7 +58,7 @@ $("input[id*='cc-checkout-submit']").attr("Value","Kaufen");
 }
 
 $("#cc-checkout-shipping-address-form h3']").text("Lieferadresse");
-$(".j-checkout__shipping-address-checkbox__title']").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs' Andere Lieferadresse>");
+$(".j-checkout__shipping-address-checkbox__title").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs'> Andere Lieferadresse");
 $("label[for*='firstname']").text("Vorname *");
 $("label[for*='lastname']").text("Nachname *");
 $("label[for*='street']").text("Straße, Nr. *");
