@@ -33,7 +33,7 @@ $("label[for*='city']").text("City *");
 $("label[for*='telephone']").text("Telephone *");
 $("label[for*='country']").text("Country * ");
 $("#cc-checkout-form p").text("* Required");
-$("div.j-checkout-payment__secure-text").text("The credit card data is encrypted.");	
+$("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");	
 }
 	
 function toGerman(){
@@ -77,7 +77,6 @@ var local = {
 	"Frau": {en:"Mrs"},
 	
 	"Zahlungsmethode auswählen.": {en:"Select a payment method."},
-	" Die Kreditkartendaten werden verschlüsselt übertragen.": {en:"The credit card data is encrypted."},
 	"PayPal (Kreditkarte, Lastschrift, Überweisung)": {en:"PayPal (credit card, direct debit, bank transfer)"},
 	"Gegen Vorkasse": {en:"Bank transfer"},
 	
