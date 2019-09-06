@@ -24,7 +24,12 @@ $("span.j-checkout__payment-method-default-text").attr("class","j-checkout__paym
 	
 
 function toEnglish(){
+if($(".j-checkout__button--step-forward").val().indexOf("Schritt")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Next step");
+}	
+if($(".j-checkout__button--step-forward").val().indexOf("Kauf")>= 0){
+$("input[id*='cc-checkout-submit']").attr("Value","Confirm");
+}	
 $("label[for*='firstname']").text("First Name *");
 $("label[for*='lastname']").text("Last Name *");
 $("label[for*='street']").text("Street, No. *");
@@ -43,7 +48,12 @@ $("div.j-checkout__overview-adress h3").html("Billing address <span class='j-che
 }
 	
 function toGerman(){
+if($(".j-checkout__button--step-forward").val().indexOf("step")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Nächster Schritt");
+}		
+if($(".j-checkout__button--step-forward").val().indexOf("firm")>= 0){
+$("input[id*='cc-checkout-submit']").attr("Value","Kaufen");
+}
 $("label[for*='firstname']").text("Vorname *");
 $("label[for*='lastname']").text("Nachname *");
 $("label[for*='street']").text("Straße, Nr. *");
@@ -57,7 +67,7 @@ if($("div.j-checkout__overview-adress h3").text().indexOf("and")>= 0){
 $("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>");	
 }
 if($("div.j-checkout__overview-adress h3").text().indexOf("Billing address")>= 0){
-$("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
+$("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>")
 }
 	
 }			
