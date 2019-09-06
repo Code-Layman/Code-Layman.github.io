@@ -33,7 +33,13 @@ $("label[for*='city']").text("City *");
 $("label[for*='telephone']").text("Telephone *");
 $("label[for*='country']").text("Country * ");
 $("#cc-checkout-form p").text("* Required");
-$("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");	
+$("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");
+if($("div.j-checkout__overview-adress h3").text().indexOf("und")>= 0){
+$("div.j-checkout__overview-adress h3").html("Billing and shipping address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
+}
+if($("div.j-checkout__overview-adress h3").text().indexOf("Rechnungsadresse")>= 0){
+$("div.j-checkout__overview-adress h3").html("Billing address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
+}		
 }
 	
 function toGerman(){
@@ -46,7 +52,14 @@ $("label[for*='city']").text("Stadt *");
 $("label[for*='telephone']").text("Telefon *");
 $("label[for*='country']").text("Land * ");
 $("#cc-checkout-form p").text("* Pflichtfeld");
-$("div.j-checkout-payment__secure-text").text("Die Kreditkartendaten werden verschlüsselt übertragen.");	
+$("div.j-checkout-payment__secure-text").text("Die Kreditkartendaten werden verschlüsselt übertragen.");
+if($("div.j-checkout__overview-adress h3").text().indexOf("and")>= 0){
+$("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>");	
+}
+if($("div.j-checkout__overview-adress h3").text().indexOf("Billing address")>= 0){
+$("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
+}
+	
 }			
 		
 var local = {
@@ -79,6 +92,8 @@ var local = {
 	"Zahlungsmethode auswählen.": {en:"Select a payment method."},
 	"PayPal (Kreditkarte, Lastschrift, Überweisung)": {en:"PayPal (credit card, direct debit, bank transfer)"},
 	"Gegen Vorkasse": {en:"Bank transfer"},
+	
+	"Versandkosten<small></small>:":{en:"Shipping costs:"},
 	
 	};	
 
