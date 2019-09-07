@@ -1,6 +1,6 @@
 $(document).ready(function(){
 var webpage=window.location.href
-var reg = RegExp(/checkout/)
+var reg = RegExp(/checkout/) 
 if(webpage.match(reg)){ 	
 $("#cc-checkout-steps li span").attr("class","trn");	
 $("#cc-checkout-paymentmethod-form h3").attr("class","trn");
@@ -30,6 +30,7 @@ $("input[id*='cc-checkout-submit']").attr("Value","Next step");
 if($(".j-checkout__button--step-forward").val().indexOf("Kauf")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Confirm");
 }	
+	
 $("#cc-checkout-shipping-address-form h3").text("Shipping address");
 $(".j-checkout__shipping-address-checkbox__title").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs'> Other shipping address");	
 $("label[for*='firstname']").text("First Name *");
@@ -43,6 +44,7 @@ $("#cc-checkout-form p").text("* Required");
 
 $("div._stripecreditcard label span:eq(1)").text("Credit card");	
 $("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");
+	
 if($("div.j-checkout__overview-adress h3").text().indexOf("und")>= 0){
 $("div.j-checkout__overview-adress h3").html("Billing and shipping address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
 }
@@ -50,12 +52,10 @@ if($("div.j-checkout__overview-adress h3").text().indexOf("Rechnungsadresse")>= 
 $("div.j-checkout__overview-adress h3").html("Billing address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
 }
 $("#cc-checkout-wayofpayment h3").html("Payment <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Change</a></span>");
-$(".j-checkout__overview-adress-title").html("Shipping address<span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Change</a></span>");	
-
+$(".j-checkout__overview-adress-title").html("Shipping address <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Change</a></span>");	
 if($("p.cc-checkout-data").text().indexOf("Vorkasse")>= 0){
 $("p.cc-checkout-data").text("Bank transfer")
 }
-
 if($("p.cc-checkout-data").text().indexOf("karte")>= 0){
 $("p.cc-checkout-data").text("Credit card")
 }	
@@ -84,6 +84,7 @@ $("#cc-checkout-form p").text("* Pflichtfeld");
 	
 $("div._stripecreditcard label span:eq(1)").text("Kreditkarte");	
 $("div.j-checkout-payment__secure-text").text("Die Kreditkartendaten werden verschlüsselt übertragen.");
+
 if($("div.j-checkout__overview-adress h3").text().indexOf("and")>= 0){
 $("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>");	
 }
@@ -91,7 +92,7 @@ if($("div.j-checkout__overview-adress h3").text().indexOf("Billing address")>= 0
 $("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>")
 }
 $("#cc-checkout-wayofpayment h3").html("Zahlungsart <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Ändern</a></span>");
-$(".j-checkout__overview-adress-title").html("Lieferadresse<span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Ändern</a></span>");	
+$(".j-checkout__overview-adress-title").html("Lieferadresse <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Ändern</a></span>");	
 
 if($("p.cc-checkout-data").text().indexOf("transfer")>= 0){
 $("p.cc-checkout-data").text("Gegen Vorkasse")
