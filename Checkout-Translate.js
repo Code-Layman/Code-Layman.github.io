@@ -47,7 +47,9 @@ $("div.j-checkout__overview-adress h3").html("Billing and shipping address <span
 }
 if($("div.j-checkout__overview-adress h3").text().indexOf("Rechnungsadresse")>= 0){
 $("div.j-checkout__overview-adress h3").html("Billing address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
-}		
+}
+$("#cc-checkout-wayofpayment h3").html("Payment <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Change</a></span>");
+	
 }
 	
 function toGerman(){
@@ -78,6 +80,8 @@ $("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span
 if($("div.j-checkout__overview-adress h3").text().indexOf("Billing address")>= 0){
 $("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>")
 }
+
+$("#cc-checkout-wayofpayment h3").html("Zahlungsart <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Ändern</a></span>");
 	
 }			
 		
