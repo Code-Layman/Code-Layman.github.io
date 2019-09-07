@@ -59,8 +59,10 @@ $("p.cc-checkout-data").text("Bank transfer")
 if($("p.cc-checkout-data").text().indexOf("karte")>= 0){
 $("p.cc-checkout-data").text("Credit card")
 }	
+$(".j-checkout__data-privacy-for-shipping-checkbox-label").html("<input class='j-checkout__data-privacy-for-shipping-checkbox-input' type='checkbox' name='dataPrivacyForShipping' id='dataPrivacyForShipping'> I agree that my e-mail address will be shared with the shipping service listed in the  <a href='/j/privacy' target='_blank'>privacy policy</a> so that the shipping service provider can send me status information about shipment delivery to me by e-mail. I can revoke my consent at any time.")	
+$(".j-checkout__withdrawal-checkbox-label").html("<input class='j-checkout__withdrawal-checkbox-input' type='checkbox' name='withdraw_right_of_withdrawal_services' id='sellservices'> I agree and expressly demand that you start the execution of the ordered service before the end of the withdrawal period. I am aware that I lose my right of withdrawal if you completely fulfill the contract.")	
+}			
 
-}
 	
 function toGerman(){
 if($(".j-checkout__button--step-forward").val().indexOf("step")>= 0){
@@ -93,14 +95,14 @@ $("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-ch
 }
 $("#cc-checkout-wayofpayment h3").html("Zahlungsart <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Ändern</a></span>");
 $(".j-checkout__overview-adress-title").html("Lieferadresse <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Ändern</a></span>");	
-
 if($("p.cc-checkout-data").text().indexOf("transfer")>= 0){
 $("p.cc-checkout-data").text("Gegen Vorkasse")
 }
-
 if($("p.cc-checkout-data").text().indexOf("card")>= 0){
 $("p.cc-checkout-data").text("Kreditkarte")
-}	
+}
+$(".j-checkout__data-privacy-for-shipping-checkbox-label").html("<input class='j-checkout__data-privacy-for-shipping-checkbox-input' type='checkbox' name='dataPrivacyForShipping' id='dataPrivacyForShipping'> Ich bin damit einverstanden, dass meine E-Mail-Adresse an den in der <a href='/j/privacy' target='_blank'>Datenschutzerklärung</a> aufgelisteten Versanddienstleister weitergegeben wird, damit der Versanddienstleister Statusinformationen zur Sendungszustellung an mich per E-Mail übermitteln kann. Meine diesbezüglich erteilte Einwilligung kann ich jederzeit widerrufen.")	
+$(".j-checkout__withdrawal-checkbox-label").html("<input class='j-checkout__withdrawal-checkbox-input' type='checkbox' name='withdraw_right_of_withdrawal_services' id='sellservices'> Ich bin einverstanden und verlange ausdrücklich, dass Sie vor Ende der Widerrufsfrist mit der Ausführung der beauftragten Dienstleistung beginnen. Mir ist bekannt, dass ich bei vollständiger Vertragserfüllung durch Sie mein Widerrufsrecht verliere.")	
 }			
 		
 var local = {
