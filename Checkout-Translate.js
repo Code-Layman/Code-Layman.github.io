@@ -21,7 +21,8 @@ $(".j-checkout__message-warning").attr("class","trn");
 $("span.j-checkout__payment-method-paypal-text").attr("class","j-checkout__payment-method-paypal-text trn");	
 $("span.j-checkout__payment-method-default-text").attr("class","j-checkout__payment-method-default-text trn");	
 	
-
+$(".j-checkout__overview-adress-data-paragraph-two strong").attr("class","trn");	
+	
 function toEnglish(){
 if($(".j-checkout__button--step-forward").val().indexOf("Schritt")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Next step");
@@ -49,7 +50,16 @@ if($("div.j-checkout__overview-adress h3").text().indexOf("Rechnungsadresse")>= 
 $("div.j-checkout__overview-adress h3").html("Billing address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
 }
 $("#cc-checkout-wayofpayment h3").html("Payment <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Change</a></span>");
-	
+$(".j-checkout__overview-adress-title").html("Shipping address<span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Change</a></span>");	
+
+if($("p.cc-checkout-data").text().indexOf("Vorkasse")>= 0){
+$("p.cc-checkout-data").text("Bank transfer")
+}
+
+if($("p.cc-checkout-data").text().indexOf("karte")>= 0){
+$("p.cc-checkout-data").text("Credit card")
+}	
+
 }
 	
 function toGerman(){
@@ -80,9 +90,16 @@ $("div.j-checkout__overview-adress h3").html("Rechnungs- und Lieferadresse <span
 if($("div.j-checkout__overview-adress h3").text().indexOf("Billing address")>= 0){
 $("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Ändern</a></span>")
 }
-
 $("#cc-checkout-wayofpayment h3").html("Zahlungsart <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Ändern</a></span>");
-	
+$(".j-checkout__overview-adress-title").html("Lieferadresse<span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Ändern</a></span>");	
+
+if($("p.cc-checkout-data").text().indexOf("transfer")>= 0){
+$("p.cc-checkout-data").text("Gegen Vorkasse")
+}
+
+if($("p.cc-checkout-data").text().indexOf("card")>= 0){
+$("p.cc-checkout-data").text("Kreditkarte")
+}	
 }			
 		
 var local = {
@@ -123,6 +140,7 @@ var local = {
 	"Gegen Vorkasse": {en:"Bank transfer"},
 	
 	"Versandkosten<small></small>:":{en:"Shipping costs:"},
+	"Telefon:":{en:"Telephone:"},
 	
 	};	
 
