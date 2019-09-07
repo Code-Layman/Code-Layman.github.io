@@ -16,7 +16,7 @@ $("#cc-checkout-address-head-same").attr("class","trn");
 $("#cc-checkout-address-head-differs").attr("class","trn");
 $("option").attr("class","trn");		
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
-	
+$(".j-checkout__message-warning").attr("class","trn");	
 
 $("span.j-checkout__payment-method-paypal-text").attr("class","j-checkout__payment-method-paypal-text trn");	
 $("span.j-checkout__payment-method-default-text").attr("class","j-checkout__payment-method-default-text trn");	
@@ -103,6 +103,13 @@ var local = {
 	"Bundesland/Kanton":{en:"State"},	
 	"USt-IdNr.":{en:"VAT No."},	
 	"Bundesland/Kanton":{en:"State"},
+	"Bitte einen Vornamen eingeben.":{en:"Please enter a first name."},
+	"Bitte einen Nachnamen eingeben.":{en:"Please enter a last name."},
+	"Bitte eine Straße eingeben.":{en:"Please enter a street."},
+	"Bitte eine Postleitzahl eingeben.":{en:"Please enter a postal code."},
+	"Bitte eine Stadt eingeben.":{en:"Please enter a city."},
+	"Bitte eine Telefonnummer eingeben.":{en:"Please enter a phone number."},
+	"Bitte eine E-Mail-Adresse eingeben.":{en:"Please enter an e-mail address."},
 	
 	"Herr":{en:"Mr"},
 	"Frau": {en:"Mrs"},
