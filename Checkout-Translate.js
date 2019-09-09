@@ -14,7 +14,8 @@ $("label.j-checkout__customer-order-note__label").attr("class","trn");
 	
 $("#cc-checkout-address-head-same").attr("class","trn");
 $("#cc-checkout-address-head-differs").attr("class","trn");
-$("option").attr("class","trn");		
+$("option").attr("class","trn");
+$("#billing_country option").removeAttr("label");	
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
 $(".j-checkout__message-warning").attr("class","trn");	
 
