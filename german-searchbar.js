@@ -1,3 +1,13 @@
+    
+$(document).ready(function(){
+var webpage=window.location.href
+var reg1 = RegExp(/laborglas/);
+var reg2 = RegExp(/laborgeraete/);
+var reg3 = RegExp(/laborzubehoer/);
+var reg4 = RegExp(/lehrmittel/);
+var reg5 = RegExp("/\de\/");
+if(webpage.match(reg1) || webpage.match(reg2)|| webpage.match(reg3)|| webpage.match(reg4)|| webpage.match(reg5)){ 
+
 var doofinder_script ='//cdn.doofinder.com/media/js/doofinder-fullscreen.6.latest.min.js';
 (function(d,t){var f=d.createElement(t),s=d.getElementsByTagName(t)[0];f.async=1;
 f.src=('https:'==location.protocol?'https:':'http:')+doofinder_script;
@@ -16,3 +26,6 @@ var dfFullscreenLayers = [{
   "zone": "eu1",
   "hashid": "09369e06b8ec8e56da1323e3bf749a61"
 }];
+
+  }
+});
