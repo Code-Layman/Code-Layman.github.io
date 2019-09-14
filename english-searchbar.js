@@ -1,3 +1,11 @@
+$(document).ready(function(){
+var webpage=window.location.href
+var reg1 = RegExp(/lab-glasses/);
+var reg2 = RegExp(/lab-equipments/);
+var reg3 = RegExp(/lab-accessories/);
+var reg4 = RegExp("/\en\/");
+if(webpage.match(reg1) || webpage.match(reg2)|| webpage.match(reg3)|| webpage.match(reg4)){ 
+  
 var doofinder_script ='//cdn.doofinder.com/media/js/doofinder-fullscreen.6.latest.min.js';
 (function(d,t){var f=d.createElement(t),s=d.getElementsByTagName(t)[0];f.async=1;
 f.src=('https:'==location.protocol?'https:':'http:')+doofinder_script;
@@ -16,3 +24,6 @@ var dfFullscreenLayers = [{
   },
   "toggleInput": "body>div#cc-inner>div.jtpl-main.cc-content-parent>div.jtpl-section-main.content-options-box.cc-content-parent>div.jtpl-sidebar-content__container.cc-content-parent>aside.jtpl-sidebar>div.jtpl-sidebar__content.sidebar-options>div>div#cc-matrix-2982223798>div#cc-m-11191541098>form>input"
 }];
+  
+ }
+});
