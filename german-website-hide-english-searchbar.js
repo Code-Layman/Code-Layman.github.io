@@ -5,7 +5,7 @@ var reg2 = RegExp(/laborgeraete/);
 var reg3 = RegExp(/laborzubehoer/);
 var reg4 = RegExp(/lehrmittel/);
 var reg5 = RegExp("/\de\/");
-if(webpage.match(reg1) || webpage.match(reg2)|| webpage.match(reg3)|| webpage.match(reg4)|| webpage.match(reg5)){ 
+if(webpage.match(reg1) || webpage.match(reg2)|| webpage.match(reg3)|| webpage.match(reg4)|| webpage.match(reg5)|| webpage=="www.laborxing.com"){ 
 $('div#cc-m-11191541098').hide(); 
 }
 });
