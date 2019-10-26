@@ -1,13 +1,13 @@
 function toGerman(){
-$(".cc-product-delivery-time-info").text("7 - 14 days delivery");
-$("button.cc-shop-addtocard").text("Add to cart");
-$(".cc-shop-product-pool").text("available");
-$(".cc-product-tax-and-shipping-info").text("Final price, plus Shipping cost"); 
+$(".cc-product-delivery-time-info").text("7 - 14 Tage Lieferzeit");
+$("button.cc-shop-addtocard").text("In den Warenkorb");
+$(".cc-shop-product-pool").text("Verfügbar");
+$(".cc-product-tax-and-shipping-info").html("Endpreis <a rel="nofollow" href="/j/shop/info/m/?productId=mfd90626c5aaf0991" class="cc-no-clickable-arrow">zzgl. Versandkosten</a>"); 
 var content=$("div.j-cart--hover-popup--cart-sum").text().trim();
 var num=content.replace(/[^0-9,","]/ig,"");
-$("div.j-cart--hover-popup--cart-sum").text("Subtotal: "+num+" €")
-$("span.cc-shop-addtocard").text("Checkout")
-$("div.j-cart--hover-popup--empty-message").text("Your shopping cart is empty.") 
+$("div.j-cart--hover-popup--cart-sum").text("Zwischensumme: "+num+" €")
+$("span.cc-shop-addtocard").text("Zur Kasse")
+$("div.j-cart--hover-popup--empty-message").text("Ihr Warenkorb ist leer.") 
 };
 function latertoGerman(){
 var t=setTimeout(function(){toGerman();},1)
