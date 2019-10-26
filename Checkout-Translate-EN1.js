@@ -213,7 +213,7 @@ var local = {
 "Singapore":{de:"Singapur"},
 "Slovakia":{de:"Slowakei"},
 "Slovenia":{de:"Slowenien"},
-"Hong Kong":{de:"Sonderverwaltungszone Hongkong"},
+"Hong Kong SAR China":{de:"Sonderverwaltungszone Hongkong"},
 "Macao":{de:"Sonderverwaltungszone Macao"},
 "Spain":{de:"Spanien"},
 "Sri Lanka":{de:"Sri Lanka"},
