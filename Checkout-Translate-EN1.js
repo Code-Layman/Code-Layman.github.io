@@ -97,7 +97,7 @@ $("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-ch
 }
 $("#cc-checkout-wayofpayment h3").html("Zahlungsart <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Ändern</a></span>");
 $(".j-checkout__overview-adress-title").html("Lieferadresse <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Ändern</a></span>");	
-if($("p.cc-checkout-data").text().indexOf("transfer")>= 0){
+if($("p.cc-checkout-data").text().indexOf("Advance")>= 0){
 $("p.cc-checkout-data").text("Gegen Vorkasse")
 }
 if($("p.cc-checkout-data").text().indexOf("card")>= 0){
@@ -234,10 +234,10 @@ var local = {
 "Vietnam":{de:"Vietnam"},
 "Cyprus":{de:"Zypern"},
 
-"Select a payment method.":{de:"Zahlungsmethode auswählen."},
-"PayPal (credit card, direct debit, bank transfer)":{de:"PayPal (Kreditkarte, Lastschrift, Überweisung)"},
-"Bank transfer":{de:"Gegen Vorkasse"},
-"Shipping costs:<small></small>":{de:"Versandkosten:"},
+"Choose payment option":{de:"Zahlungsmethode auswählen."},
+"PayPal (including credit card, debit card, and bank transfer)":{de:"PayPal (Kreditkarte, Lastschrift, Überweisung)"},
+"Payment in Advance":{de:"Gegen Vorkasse"},
+"Shipping Costs<small></small>:":{de:"Versandkosten:"},
 "Telephone:":{de:"Telefon:"},
 	};	
 
