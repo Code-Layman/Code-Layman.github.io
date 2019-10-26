@@ -33,12 +33,12 @@ if($(".j-checkout__button--step-forward").val().indexOf("Kauf")>= 0){
 $("input[id*='cc-checkout-submit']").attr("Value","Confirm");
 }	
 	
-$("#cc-checkout-shipping-address-form h3").text("Shipping address");
-$(".j-checkout__shipping-address-checkbox__title").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs'> Other shipping address");	
+$("#cc-checkout-shipping-address-form h3").text("Shipping Address");
+$(".j-checkout__shipping-address-checkbox__title").html("<input type='checkbox' class='j-checkout-address-checkbox__box' value='1' data-action='toggleAddressForm' name='shipping_address_differs'> Other Shipping Address");	
 $("label[for*='firstname']").text("First Name *");
 $("label[for*='lastname']").text("Last Name *");
-$("label[for*='street']").text("Street, No. *");
-$("label[for*='zip']").text("Post code *");
+$("label[for*='street']").text("Street Adress *");
+$("label[for*='zip']").text("Postal Code *");
 $("label[for*='city']").text("City *");
 $("label[for*='telephone']").text("Telephone *");
 $("label[for*='country']").text("Country * ");
