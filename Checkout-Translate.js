@@ -15,7 +15,8 @@ $("label.j-checkout__customer-order-note__label").attr("class","trn");
 $("#cc-checkout-address-head-same").attr("class","trn");
 $("#cc-checkout-address-head-differs").attr("class","trn");
 $("option").attr("class","trn");
-$("#billing_country option").removeAttr("label");	
+$("#billing_country option").removeAttr("label");
+$("#shipping_country option").removeAttr("label");
 $(".j-checkout__input-label ").attr("class","j-checkout__input-label trn");
 $(".j-checkout__message-warning").attr("class","trn");	
 
@@ -235,9 +236,6 @@ var local = {
 "Vietnam":{en:"Vietnam"},
 "Zypern":{en:"Cyprus"},
 
-	
-	
-	
 	"Zahlungsmethode auswählen.": {en:"Select a payment method."},
 	"PayPal (Kreditkarte, Lastschrift, Überweisung)": {en:"PayPal (credit card, direct debit, bank transfer)"},
 	"Gegen Vorkasse": {en:"Bank transfer"},
