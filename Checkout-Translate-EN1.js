@@ -97,6 +97,7 @@ $("div.j-checkout__overview-adress h3").html("Rechnungsadresse <span class='j-ch
 }
 $("#cc-checkout-wayofpayment h3").html("Zahlungsart <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Ändern</a></span>");
 $(".j-checkout__overview-adress-title").html("Lieferadresse <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Ändern</a></span>");	
+
 if($("p.cc-checkout-data").text().indexOf("Advance")>= 0){
 $("p.cc-checkout-data").text("Gegen Vorkasse")
 }
