@@ -108,16 +108,16 @@ $(".j-checkout__withdrawal-checkbox-label").html("<input class='j-checkout__with
 }			
 		
 var local = {
-"Shipping cart":{de:"Warenkorb"},
-"Shipping address":{de:"Adresse angeben"},
-"Payment":{de:"Bezahlen"},
+"Shopping Cart":{de:"Warenkorb"},
+"Enter address":{de:"Adresse angeben"},
+"Pay":{de:"Bezahlen"},
 "Confirm":{de:"Bestätigen"},
-"Single price":{de:"Einzelpreis"},
-"Amount":{de:"Anzahl"},
+"Unit Price":{de:"Einzelpreis"},
+"Number":{de:"Anzahl"},
 "Price":{de:"Preis"},
 "Subtotal":{de:"Zwischensumme"},
-"Shipping costs*<small></small>:":{de:"Versandkosten*"},
-" Total:<small></small>":{de:" Gesamtsumme:"},
+"Shipping Costs*<small></small>:":{de:"Versandkosten*"},
+" Total<small></small>:":{de:" Gesamtsumme:"},
 "Customer order note":{de:"Anmerkung zur Bestellung"},
 "Customer order note":{de:"Anmerkung"},
 "Billing and shipping address":{de:"Rechnungs- und Lieferadresse"},
