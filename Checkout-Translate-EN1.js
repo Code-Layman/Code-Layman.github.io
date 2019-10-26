@@ -48,13 +48,13 @@ $("div._stripecreditcard label span:eq(1)").text("Credit card");
 $("div.j-checkout-payment__secure-text").text("Your credit card payment is being transmitted securely.");
 	
 if($("div.j-checkout__overview-adress h3").text().indexOf("und")>= 0){
-$("div.j-checkout__overview-adress h3").html("Billing and shipping address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
+$("div.j-checkout__overview-adress h3").html("Billing and Shipping Address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>change</a></span>")
 }
 if($("div.j-checkout__overview-adress h3").text().indexOf("Rechnungsadresse")>= 0){
-$("div.j-checkout__overview-adress h3").html("Billing address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
+$("div.j-checkout__overview-adress h3").html("Billing Address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>change</a></span>")
 }
-$("#cc-checkout-wayofpayment h3").html("Payment <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Change</a></span>");
-$(".j-checkout__overview-adress-title").html("Shipping address <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Change</a></span>");	
+$("#cc-checkout-wayofpayment h3").html("Payment Type <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>change</a></span>");
+$(".j-checkout__overview-adress-title").html("Shipping Address <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>change</a></span>");	
 if($("p.cc-checkout-data").text().indexOf("Vorkasse")>= 0){
 $("p.cc-checkout-data").text("Payment in Advance")
 }
