@@ -2,7 +2,7 @@ function toGerman(){
 $(".cc-product-delivery-time-info").text("7 - 14 Tage Lieferzeit");
 $("button.cc-shop-addtocard").text("In den Warenkorb");
 $(".cc-shop-product-pool").text("Verfügbar");
-$(".cc-product-tax-and-shipping-info").html("Endpreis <a rel="nofollow" href="/j/shop/info/m/?productId=mfd90626c5aaf0991" class="cc-no-clickable-arrow">zzgl. Versandkosten</a>"); 
+$(".cc-product-tax-and-shipping-info").html("Endpreis <a rel='nofollow' href='/j/shop/info/m/?productId=mfd90626c5aaf0991' class='cc-no-clickable-arrow'>zzgl. Versandkosten</a>"); 
 var content=$("div.j-cart--hover-popup--cart-sum").text().trim();
 var num=content.replace(/[^0-9,","]/ig,"");
 $("div.j-cart--hover-popup--cart-sum").text("Zwischensumme: "+num+" €")
