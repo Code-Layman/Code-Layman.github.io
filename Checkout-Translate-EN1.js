@@ -56,13 +56,13 @@ $("div.j-checkout__overview-adress h3").html("Billing address <span class='j-che
 $("#cc-checkout-wayofpayment h3").html("Payment <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/payment'>Change</a></span>");
 $(".j-checkout__overview-adress-title").html("Shipping address <span class='j-checkout__overview-change-wrapper'><a href='/j/checkout/data' class='j-checkout__overview-change-link'>Change</a></span>");	
 if($("p.cc-checkout-data").text().indexOf("Vorkasse")>= 0){
-$("p.cc-checkout-data").text("Bank transfer")
+$("p.cc-checkout-data").text("Payment in Advance")
 }
 if($("p.cc-checkout-data").text().indexOf("karte")>= 0){
 $("p.cc-checkout-data").text("Credit card")
 }	
-$(".j-checkout__data-privacy-for-shipping-checkbox-label").html("<input class='j-checkout__data-privacy-for-shipping-checkbox-input' type='checkbox' name='dataPrivacyForShipping' id='dataPrivacyForShipping'> I agree that my e-mail address will be shared with the shipping service listed in the  <a href='/j/privacy' target='_blank'>privacy policy</a> so that the shipping service provider can send me status information about shipment delivery to me by e-mail. I can revoke my consent at any time.")	
-$(".j-checkout__withdrawal-checkbox-label").html("<input class='j-checkout__withdrawal-checkbox-input' type='checkbox' name='withdraw_right_of_withdrawal_services' id='sellservices'> I agree and expressly demand that you start the execution of the ordered service before the end of the withdrawal period. I am aware that I lose my right of withdrawal if you completely fulfill the contract.")	
+$(".j-checkout__data-privacy-for-shipping-checkbox-label").html("<input class='j-checkout__data-privacy-for-shipping-checkbox-input' type='checkbox' name='dataPrivacyForShipping' id='dataPrivacyForShipping'> I agree that my e-mail address will be shared with the shipping service listed in the  <a href='/j/privacy' target='_blank'>privacy policy</a> so that the shipping service provider can send me shipment status information via e-mail. I can revoke my consent at any time.")	
+$(".j-checkout__withdrawal-checkbox-label").html("<input class='j-checkout__withdrawal-checkbox-input' type='checkbox' name='withdraw_right_of_withdrawal_services' id='sellservices'>I agree to waive my right of cancellation upon the completion of the agreed upon service. I understand that I will lose my right to cancel the service that I am paying for when the contract is fulfilled.")	
 }			
 
 	
