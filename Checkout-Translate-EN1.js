@@ -45,7 +45,7 @@ $("label[for*='country']").text("Country * ");
 $("#cc-checkout-form p").text("* Required");
 
 $("div._stripecreditcard label span:eq(1)").text("Credit card");	
-$("div.j-checkout-payment__secure-text").text("The credit card data will be encrypted transmit.");
+$("div.j-checkout-payment__secure-text").text("Your credit card payment is being transmitted securely.");
 	
 if($("div.j-checkout__overview-adress h3").text().indexOf("und")>= 0){
 $("div.j-checkout__overview-adress h3").html("Billing and shipping address <span class='j-checkout__overview-change-wrapper'><a class='j-checkout__overview-change-link' href='/j/checkout/data'>Change</a></span>")
@@ -124,16 +124,16 @@ var local = {
 "Billing Address":{de:"Rechnungsadresse"},
 "Title":{de:"Anrede"},
 "Company":{de:"Firma"},
-"Address 2nd Line":{de:"Adresszusatz"},
+"Address 2nd Line ":{de:"Adresszusatz"},
 "State/Province":{de:"Bundesland/Kanton"},
 "VAT ID Number":{de:"USt-IdNr."},
 "Please enter a first name.":{de:"Bitte einen Vornamen eingeben."},
 "Please enter a last name.":{de:"Bitte einen Nachnamen eingeben."},
-"Please enter a street.":{de:"Bitte eine Straße eingeben."},
-"Please enter a postal code.":{de:"Bitte eine Postleitzahl eingeben."},
-"Please enter a city.":{de:"Bitte eine Stadt eingeben."},
-"Please enter a phone number.":{de:"Bitte eine Telefonnummer eingeben."},
-"Please enter an e-mail address.":{de:"Bitte eine E-Mail-Adresse eingeben."},
+"Please enter your street address.":{de:"Bitte eine Straße eingeben."},
+"Please enter your postal code.":{de:"Bitte eine Postleitzahl eingeben."},
+"Please enter your city or town.":{de:"Bitte eine Stadt eingeben."},
+"Please enter a telephone number.":{de:"Bitte eine Telefonnummer eingeben."},
+"Please enter an email address.":{de:"Bitte eine E-Mail-Adresse eingeben."},
 
 "Mr.":{de:"Herr"},
 "Ms.":{de:"Frau"},
