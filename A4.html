@@ -1,0 +1,21 @@
+<h3><strong>Compatibility</strong></h3>
+<p><strong><span>This item fits with these vehicles:</span></strong></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code-layman.github.io/jquery.columns.min.js"></script>
+<link rel="stylesheet" href="https://code-layman.github.io/clean.css">
+<div id="example1"></div>
+<script>// <![CDATA[
+$(document).ready(function() {
+
+	  $.ajax({
+      url:'https://cdn.shopify.com/s/files/1/0248/2529/8995/files/CGC.json',
+      dataType: 'json', 
+      success: function(json) { 
+        example1 =  $('#example1').columns({
+              data:json, 
+          }); 
+      }
+  }); 	  	  
+
+  });
+// ]]></script>
